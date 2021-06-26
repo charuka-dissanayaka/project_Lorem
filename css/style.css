@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 
-* {
-    box-sizing: border-box;
-}
+
 header,
 section{
     overflow-x: hidden;
@@ -110,14 +108,17 @@ section{
     transition-delay: .3;
 }
 @media (max-width:992px){
- .header.nav-brand{
-     padding-left: 1rem ;
- }
-    
-} 
-@media(max-width:768px){
-
+    .single{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .single .card{
+        width: 300px;
+    }
 }
-@media(max-width:576px){
-
+@media (max-width:768px){
+    .single .card{
+        width: 300px;
+    }
 }
